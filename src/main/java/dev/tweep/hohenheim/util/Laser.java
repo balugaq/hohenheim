@@ -7,7 +7,7 @@ import org.bukkit.Particle;
 import org.bukkit.block.Block;
 import org.bukkit.util.Vector;
 
-public final class HLaser {
+public final class Laser {
 
     private static final double MAX_STEPS_LASER = 100;
     private static final double STEP_PER_BLOCK = 0.5;

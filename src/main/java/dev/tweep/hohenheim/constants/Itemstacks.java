@@ -4,7 +4,7 @@ import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 
-public final class HItemstacks {
+public final class Itemstacks {
 
     private static final String SOUL_FRAGMENT_BASE64 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9" +
             "0ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ODAyMTY1OGJmYzIxY2NjNDRjZjExZTQwNThmZDE3ZjMzN" +
@@ -13,7 +13,7 @@ public final class HItemstacks {
     public static final SlimefunItemStack TRANSMUTATION_WAND_ITEMSTACK;
     public static final SlimefunItemStack BELLADONNA_ROOT_ITEMSTACK;
     public static final SlimefunItemStack MANDRAKE_ROOT_ITEMSTACK;
-    public static final SlimefunItemStack SHIVERTHORN_ITEMSTACK;
+    public static final SlimefunItemStack SHIVERTHORN_ROOT_ITEMSTACK;
     public static final SlimefunItemStack EVIL_EYE_ROOT_ITEMSTACK;
 
     public static final SlimefunItemStack SOUL_FRAGMENT_ITEMSTACK;
@@ -29,13 +29,13 @@ public final class HItemstacks {
         MANDRAKE_ROOT_ITEMSTACK = new SlimefunItemStack("MANDRAKE_ROOT", Material.SPRUCE_LEAVES,
                 ChatColor.DARK_GREEN + "Mandrake Root",
                 "", ChatColor.GREEN + "Reminds you of cacti...");
-        SHIVERTHORN_ITEMSTACK = new SlimefunItemStack("SHIVERTHORN_ROOT", Material.BIRCH_LEAVES,
+        SHIVERTHORN_ROOT_ITEMSTACK = new SlimefunItemStack("SHIVERTHORN_ROOT", Material.BIRCH_LEAVES,
                 ChatColor.AQUA + "Shiverthorn Root",
                 "", ChatColor.AQUA + "Similar to poppies in a way...");
         EVIL_EYE_ROOT_ITEMSTACK = new SlimefunItemStack("EVIL_EVE_ROOT", Material.NETHER_WART_BLOCK,
                 ChatColor.DARK_RED + "Evil Eye Root",
-                "", ChatColor.RED + "It creeps you out just looking at it.",
-                "Did you need to touch those roots?");
+                "", ChatColor.RED + "Glances at you constantly...",
+                "Why did you need to twist nether warts even more?");
 
         SOUL_FRAGMENT_ITEMSTACK = new SlimefunItemStack("SOUL_FRAGMENT", SOUL_FRAGMENT_BASE64,
                 ChatColor.GRAY + "Soul Fragment",
