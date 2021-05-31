@@ -12,7 +12,12 @@ public class EntropyRegenerationTask extends BukkitRunnable {
         Iterator<PlayerData> iter = EntropyManager.getInstance().getActiveUsers();
         while (iter.hasNext()) {
             PlayerData data = iter.next();
-            data.setEntropy(data.getEntropy() + data.getRegenerationRate());
+            int entropy = data.getEntropy();
+            if (entropy < data.getMaxEntropy()) {
+                data.setEntropy(data.getEntropy() + data.getRegenerationRate());
+            } else {
+                data.setEntropy(data.getMaxEntropy());
+            }
         }
     }
 }

@@ -20,18 +20,23 @@ public class PlayerEntropySwitchListener implements Listener {
 
     @EventHandler
     public void onPlayerEntropySwitch(@NonNull PlayerItemHeldEvent event) {
+        boolean addedUser = false;
+
         Player player = event.getPlayer();
         UUID playerId = player.getUniqueId();
         ItemStack[] inventoryContents = player.getInventory().getContents();
-
         ItemStack heldItem = inventoryContents[event.getNewSlot()];
-        ItemMeta heldItemMeta = heldItem.getItemMeta();
-
         NamespacedKey key = new NamespacedKey(Hohenheim.getInstance(), "entropy");
 
-        if (heldItemMeta != null && heldItemMeta.getPersistentDataContainer().has(key, PersistentDataType.BYTE)) {
-            entropyManager.addActiveUser(playerId);
-        } else if (entropyManager.getActiveUser(playerId) != null) {
+        if (heldItem != null) {
+            ItemMeta heldItemMeta = heldItem.getItemMeta();
+            if (heldItemMeta != null && heldItemMeta.getPersistentDataContainer().has(key, PersistentDataType.BYTE)) {
+                entropyManager.addActiveUser(playerId);
+                addedUser = true;
+            }
+        }
+
+        if (!addedUser && entropyManager.getActiveUser(playerId) != null) {
             entropyManager.removeActiveUser(playerId);
         }
     }

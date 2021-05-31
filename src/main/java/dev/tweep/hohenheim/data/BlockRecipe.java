@@ -1,5 +1,6 @@
 package dev.tweep.hohenheim.data;
 
+import dev.tweep.hohenheim.util.Logger;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -19,9 +20,10 @@ public class BlockRecipe {
 
     public static SlimefunItem findRecipe(PlayerData data, Block block) {
         BlockRecipe recipe = map.get(new BlockInputData(block));
-        if (recipe != null && recipe.cost < data.getEntropy()) {
-            data.setEntropy(data.getEntropy() - recipe.cost);
-            return recipe.output;
+        if (recipe != null && recipe.getCost() < data.getEntropy()) {
+            Logger.log(recipe.toString());
+            data.setEntropy(data.getEntropy() - recipe.getCost());
+            return recipe.getOutput();
         }
         return null;
     }

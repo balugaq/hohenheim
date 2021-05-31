@@ -1,6 +1,7 @@
 package dev.tweep.hohenheim.managers;
 
 import com.google.gson.Gson;
+import com.google.gson.internal.LinkedTreeMap;
 import com.google.gson.reflect.TypeToken;
 import dev.tweep.hohenheim.data.PlayerData;
 import dev.tweep.hohenheim.util.Logger;
@@ -19,7 +20,7 @@ import java.util.UUID;
 public class PersistentDataManager {
 
     private static PersistentDataManager instance = null;
-    private final HashMap<UUID, PlayerData> persistentEntropyData;
+    private final Map<UUID, PlayerData> persistentEntropyData;
 
     private PersistentDataManager() {
         persistentEntropyData = load();
@@ -54,12 +55,12 @@ public class PersistentDataManager {
         }
     }
 
-    private HashMap<UUID, PlayerData> load() {
-        HashMap<UUID, PlayerData> result = new HashMap<>();
+    private Map<UUID, PlayerData> load() {
+        Map<UUID, PlayerData> result = new LinkedTreeMap<>();
         if (new File("data.json").exists()) {
             try {
                 Reader reader = Files.newBufferedReader(Path.of("data.json"));
-                result = new Gson().fromJson(reader, new TypeToken<Map<String, String>>() {
+                result = new Gson().fromJson(reader, new TypeToken<Map<UUID, PlayerData>>() {
                 }.getType());
                 reader.close();
             } catch (IOException e) {

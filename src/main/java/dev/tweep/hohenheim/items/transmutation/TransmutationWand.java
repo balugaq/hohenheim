@@ -6,6 +6,7 @@ import dev.tweep.hohenheim.data.ItemRecipe;
 import dev.tweep.hohenheim.data.PlayerData;
 import dev.tweep.hohenheim.managers.EntropyManager;
 import dev.tweep.hohenheim.util.Laser;
+import dev.tweep.hohenheim.util.Logger;
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import lombok.NonNull;
@@ -69,8 +70,9 @@ public class TransmutationWand extends SlimefunItem {
     private void transmutateRecipe(@NonNull PlayerData playerData, @NonNull Block block) {
         SlimefunItem output = BlockRecipe.findRecipe(playerData, block);
         if (output != null) {
+            Logger.log(output.toString());
             block.setType(output.getItem().getType());
-            BlockStorage.addBlockInfo(block, "id", output.getId(), true);
+            BlockStorage.store(block, output.getId());
             block.getWorld().spawnParticle(Particle.EXPLOSION_NORMAL, block.getLocation(), 1);
             block.getWorld().playSound(block.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
         }

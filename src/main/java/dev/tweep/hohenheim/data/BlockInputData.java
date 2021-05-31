@@ -5,6 +5,7 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.jetbrains.annotations.Nullable;
 
 @Data
 public class BlockInputData {
@@ -17,9 +18,13 @@ public class BlockInputData {
         this.id = BlockStorage.checkID(block);
     }
 
-    public BlockInputData(Material material, SlimefunItem item) {
+    public BlockInputData(Material material, @Nullable BlockInputData item) {
         this.material = material;
-        this.id = item.getId();
+        if (item != null) {
+            this.id = item.getId();
+        } else {
+            this.id = null;
+        }
     }
 
 }
