@@ -1,10 +1,10 @@
-# Hohenheim
+# 嬗变工艺
 
-A Slimefun4-Addon made for the Slimefun-2021-Addon-Jam!
+是 Slimefun-2021-Addon-Jam的比赛附属!
 
 [![CodeFactor](https://www.codefactor.io/repository/github/tweepcoding/hohenheim/badge)](https://www.codefactor.io/repository/github/tweepcoding/hohenheim)
 
-## New Additions:
+## 新物品:
 
 * Transmutation Magic
 * Herbalism
@@ -13,7 +13,7 @@ A Slimefun4-Addon made for the Slimefun-2021-Addon-Jam!
 * Soul Manipulation
 * and more!
 
-## Building Project:
+## 需知:
 
 Project was developed using Spigot 1.16.5 API, and in Java 11.
 
