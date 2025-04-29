@@ -18,27 +18,27 @@ public final class Itemstacks {
             "WMyNmE4MjY1ZGQ4NzBkMTkyNGExYThkNmQ2NSJ9fX0=";
 
     static {
-        TRANSMUTATION_WAND_ITEMSTACK = new SlimefunItemStack("TRANSMUTATION_WAND", Material.STICK,
+        TRANSMUTATION_WAND_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_TRANSMUTATION_WAND", Material.STICK,
                 ChatColor.DARK_RED + "Transmutation Wand",
                 "", ChatColor.RED + "Right-Click to change your destiny");
-        BELLADONNA_ROOT_ITEMSTACK = new SlimefunItemStack("BELLADONNA_ROOT", Material.JUNGLE_LEAVES,
+        BELLADONNA_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_BELLADONNA_ROOT", Material.JUNGLE_LEAVES,
                 ChatColor.LIGHT_PURPLE + "Belladonna Root",
                 "", ChatColor.LIGHT_PURPLE + "Smells like an allinium...");
-        MANDRAKE_ROOT_ITEMSTACK = new SlimefunItemStack("MANDRAKE_ROOT", Material.SPRUCE_LEAVES,
+        MANDRAKE_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_MANDRAKE_ROOT", Material.SPRUCE_LEAVES,
                 ChatColor.DARK_GREEN + "Mandrake Root",
                 "", ChatColor.GREEN + "Reminds you of cacti...");
-        SHIVERTHORN_ROOT_ITEMSTACK = new SlimefunItemStack("SHIVERTHORN_ROOT", Material.BIRCH_LEAVES,
+        SHIVERTHORN_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_SHIVERTHORN_ROOT", Material.BIRCH_LEAVES,
                 ChatColor.AQUA + "Shiverthorn Root",
                 "", ChatColor.AQUA + "Similar to poppies in a way...");
-        EVIL_EYE_ROOT_ITEMSTACK = new SlimefunItemStack("EVIL_EVE_ROOT", Material.NETHER_WART_BLOCK,
+        EVIL_EYE_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_EVIL_EVE_ROOT", Material.NETHER_WART_BLOCK,
                 ChatColor.DARK_RED + "Evil Eye Root",
                 "", ChatColor.RED + "Glances at you constantly...",
                 "Why did you need to twist nether warts even more?");
 
-        SOUL_FRAGMENT_ITEMSTACK = new SlimefunItemStack("SOUL_FRAGMENT", SOUL_FRAGMENT_BASE64,
+        SOUL_FRAGMENT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_SOUL_FRAGMENT", SOUL_FRAGMENT_BASE64,
                 ChatColor.GRAY + "Soul Fragment",
                 "", "Ad multorum anima tua");
-        HOROCRUX_BINDING_ITEMSTACK = new SlimefunItemStack("HOROCRUX_BINDING", Material.LIGHT_GRAY_DYE,
+        HOROCRUX_BINDING_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_HOROCRUX_BINDING", Material.LIGHT_GRAY_DYE,
                 ChatColor.RED + "Horocrux Binding",
                 "", ChatColor.RED + "Ad caedem et ad vitam aeternam");
     }
