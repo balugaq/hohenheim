@@ -1,23 +1,21 @@
 package dev.tweep.hohenheim.constants;
 
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 
 public final class Itemstacks {
-
-    private static final String SOUL_FRAGMENT_BASE64 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9" +
-            "0ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ODAyMTY1OGJmYzIxY2NjNDRjZjExZTQwNThmZDE3ZjMzN" +
-            "WMyNmE4MjY1ZGQ4NzBkMTkyNGExYThkNmQ2NSJ9fX0=";
 
     public static final SlimefunItemStack TRANSMUTATION_WAND_ITEMSTACK;
     public static final SlimefunItemStack BELLADONNA_ROOT_ITEMSTACK;
     public static final SlimefunItemStack MANDRAKE_ROOT_ITEMSTACK;
     public static final SlimefunItemStack SHIVERTHORN_ROOT_ITEMSTACK;
     public static final SlimefunItemStack EVIL_EYE_ROOT_ITEMSTACK;
-
     public static final SlimefunItemStack SOUL_FRAGMENT_ITEMSTACK;
     public static final SlimefunItemStack HOROCRUX_BINDING_ITEMSTACK;
+    private static final String SOUL_FRAGMENT_BASE64 = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9" +
+            "0ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ODAyMTY1OGJmYzIxY2NjNDRjZjExZTQwNThmZDE3ZjMzN" +
+            "WMyNmE4MjY1ZGQ4NzBkMTkyNGExYThkNmQ2NSJ9fX0=";
 
     static {
         TRANSMUTATION_WAND_ITEMSTACK = new SlimefunItemStack("TRANSMUTATION_WAND", Material.STICK,

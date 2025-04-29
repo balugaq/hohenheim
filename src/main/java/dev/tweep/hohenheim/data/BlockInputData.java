@@ -1,7 +1,6 @@
 package dev.tweep.hohenheim.data;
 
 import lombok.Data;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
 import org.bukkit.block.Block;

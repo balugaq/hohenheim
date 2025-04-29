@@ -3,8 +3,8 @@ package dev.tweep.hohenheim.constants;
 import dev.tweep.hohenheim.Hohenheim;
 import dev.tweep.hohenheim.items.transmutation.AlchemyGuide;
 import dev.tweep.hohenheim.items.transmutation.TransmutationWand;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 
 public final class Items {
 

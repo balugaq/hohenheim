@@ -7,17 +7,20 @@ import dev.tweep.hohenheim.managers.PersistentDataManager;
 import dev.tweep.hohenheim.tasks.EntropyActionBarTask;
 import dev.tweep.hohenheim.tasks.EntropyRegenerationTask;
 import dev.tweep.hohenheim.util.Logger;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import lombok.NonNull;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import org.jetbrains.annotations.NotNull;
 
 
 public class Hohenheim extends JavaPlugin implements SlimefunAddon {
 
     private static Hohenheim instance = null;
+
+    public static @NonNull Hohenheim getInstance() {
+        return instance;
+    }
 
     @Override
     public void onEnable() {
@@ -52,10 +55,6 @@ public class Hohenheim extends JavaPlugin implements SlimefunAddon {
     @Override
     public @NotNull JavaPlugin getJavaPlugin() {
         return this;
-    }
-
-    public static @NonNull Hohenheim getInstance() {
-        return instance;
     }
 
     private void registerResearches() {

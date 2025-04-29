@@ -16,6 +16,14 @@ public class ItemRecipe {
     private final int cost;
     private int hash;
 
+    public ItemRecipe(@NonNull ItemStack[] recipeEntry, @NonNull ItemStack output, @NonNull int cost) {
+        this.output = output;
+        this.cost = cost;
+        for (ItemStack stack : recipeEntry) {
+            hash += stack.hashCode();
+        }
+    }
+
     /**
      * @param data        The {@link PlayerData} instance of the player that is crafting
      * @param recipeEntry A list of the Itemstacks provided.
@@ -36,14 +44,6 @@ public class ItemRecipe {
             return recipe.output;
         }
         return null;
-    }
-
-    public ItemRecipe(@NonNull ItemStack[] recipeEntry, @NonNull ItemStack output, @NonNull int cost) {
-        this.output = output;
-        this.cost = cost;
-        for (ItemStack stack : recipeEntry) {
-            hash += stack.hashCode();
-        }
     }
 
     public void register() {

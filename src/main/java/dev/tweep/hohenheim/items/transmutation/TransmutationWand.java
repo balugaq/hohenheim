@@ -8,14 +8,17 @@ import dev.tweep.hohenheim.managers.EntropyManager;
 import dev.tweep.hohenheim.util.Laser;
 import dev.tweep.hohenheim.util.Logger;
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
 import lombok.NonNull;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import org.bukkit.*;
+import org.bukkit.Location;
+import org.bukkit.NamespacedKey;
+import org.bukkit.Particle;
+import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
@@ -29,7 +32,7 @@ import java.util.stream.Collectors;
 
 public class TransmutationWand extends SlimefunItem {
 
-    public TransmutationWand(@NonNull Category category, @NonNull SlimefunItemStack item,
+    public TransmutationWand(@NonNull ItemGroup category, @NonNull SlimefunItemStack item,
                              @NonNull RecipeType type, @NonNull ItemStack[] recipe) {
         super(category, item, type, recipe);
         ItemMeta meta = getItem().getItemMeta();

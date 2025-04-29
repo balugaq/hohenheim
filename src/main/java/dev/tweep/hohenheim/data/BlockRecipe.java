@@ -1,9 +1,9 @@
 package dev.tweep.hohenheim.data;
 
 import dev.tweep.hohenheim.util.Logger;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import org.bukkit.block.Block;
 
 import java.util.HashMap;
