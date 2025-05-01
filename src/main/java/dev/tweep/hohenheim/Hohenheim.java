@@ -49,7 +49,7 @@ public class Hohenheim extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/TweepCoding/hohenheim/issues";
+        return "https://github.com/balugaq/hohenheim/issues";
     }
 
     @Override
