@@ -12,58 +12,57 @@ import org.bukkit.inventory.meta.BookMeta;
 public class AlchemyGuide extends SlimefunItem {
 
     private static final String[][] pages = {
-            {
-                    "",
-                    "",
-                    ChatColor.RED + "Alchemy, Ancient Art and Science",
-                    "",
-                    ""
+        {
+                "",
+                "",
+                ChatColor.RED + "炼金术，古老的艺术与科学",
+                "",
+                ""
             },
             {
-                    "",
-                    "...the art is performed by alchemists of great skill",
-                    "who with their power shape the land and the sky",
-                    "from within themselves...",
-                    ""
+                "",
+                "...这种艺术由技艺高超的炼金术士施展，",
+                "他们用自己的力量塑造大地与天空，",
+                "从自身内部……",
+                ""
             },
             {
-                    "",
-                    "...power they call entropy. To be able to channel this power, they",
-                    "must use a medium. This is the purpose of the wand of an alchemist, to",
-                    "be able to create matter out of matter...",
-                    ""
+                "",
+                "...他们称之为熵的力量。为了能够引导这种力量，他们",
+                "必须借助媒介。这就是炼金术士魔杖的作用，",
+                "能够凭空创造出物质……",
+                ""
             },
             {
-                    "",
-                    "...methods of alchemy are usually either by casting their magic to items",
-                    "on the ground, or in the ground itself with a flick of their wand. Their",
-                    "ability depends on how much entropy they can channel within themselves and",
-                    "their wand respectively...",
-                    ""
+                "",
+                "...炼金术的方法通常是将魔法施加到地面上的物品，",
+                "或者通过魔杖的挥动直接作用于地面本身。他们的",
+                "能力取决于他们自身以及魔杖能够引导的熵的量……",
+                ""
             },
             {
-                    "",
-                    "...herbology is a vital part for the alchemist, as it allows it to manipulate",
-                    "entropy via the power of nature in never seen before ways. However, the specific",
-                    "plants an alchemist needs may not exist in this realm anymore. Perhaps with some",
-                    "transmutation, it might be possible to bring them back?",
-                    ""
+                "",
+                "...草药学是炼金术士的重要部分，因为它允许他们通过自然的力量",
+                "以前所未有的方式操纵熵。然而，炼金术士所需的特定植物",
+                "可能已经不再存在于这个世界中了。也许通过某种炼金术，",
+                "它们可以被重新带回这个世界？",
+                ""
             },
             {
-                    "",
-                    "...are forbidden transmutations, in which one's soul must be a part of the process.",
-                    "Only the most skilled alchemists would ever dare to do something like this...",
-                    "...tear a soul, said soul must commit homicide on your own species...",
-                    "...only the one whose soul was taken from could do the transmutation...",
-                    ""
+                "",
+                "...存在禁忌的炼金术，其中必须以灵魂作为过程的一部分。",
+                "只有技艺最为高超的炼金术士才敢尝试这样的行为……",
+                "...要撕裂灵魂，该灵魂必须对自己的同类犯下谋杀罪……",
+                "...只有被夺走灵魂的人才能进行炼金术……",
+                ""
             },
             {
-                    "",
-                    "",
-                    ChatColor.RED + "End of the book",
-                    "",
-                    ""
-            }
+                "",
+                "",
+                ChatColor.RED + "完",
+                "",
+                ""
+        }
     };
 
     private static final SlimefunItemStack ALCHEMY_GUIDE_STACK = new SlimefunItemStack("ALCHEMY_GUIDE",

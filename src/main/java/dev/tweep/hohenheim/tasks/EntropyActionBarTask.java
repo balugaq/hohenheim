@@ -18,7 +18,7 @@ public class EntropyActionBarTask extends BukkitRunnable {
         while (iter.hasNext()) {
             PlayerData data = iter.next();
             Player player = Bukkit.getPlayer(data.getPlayerId());
-            String messageToSend = String.format(ChatColor.DARK_PURPLE + "熵 Entropy: %d, %d", data.getEntropy(), data.getMaxEntropy());
+            String messageToSend = String.format(ChatColor.DARK_PURPLE + "熵: %d, %d", data.getEntropy(), data.getMaxEntropy());
             if (player != null) {
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(messageToSend));
             }
