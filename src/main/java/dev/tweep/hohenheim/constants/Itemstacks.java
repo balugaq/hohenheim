@@ -23,7 +23,7 @@ public final class Itemstacks {
         "", ChatColor.RED + "右键 改变你的命运");
         BELLADONNA_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_BELLADONNA_ROOT", Material.JUNGLE_LEAVES,
         ChatColor.LIGHT_PURPLE + "颠茄根",
-        "", ChatColor.LIGHT_PURPLE + "闻起来像是一种全尼……");
+        "", ChatColor.LIGHT_PURPLE + "闻起来像铝……");
         MANDRAKE_ROOT_ITEMSTACK = new SlimefunItemStack("HOHENHEIM_MANDRAKE_ROOT", Material.SPRUCE_LEAVES,
         ChatColor.DARK_GREEN + "曼德拉根",
         "", ChatColor.GREEN + "让你想起了仙人掌……");

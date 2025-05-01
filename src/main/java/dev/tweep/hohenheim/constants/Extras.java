@@ -30,7 +30,7 @@ public final class Extras {
 
         TRANSMUTATION_WAND_KEY = new NamespacedKey(Hohenheim.getInstance(), "transmutation_wand_recipetype");
         TRANSMUTATION_WAND_RECIPE_ITEM = new CustomItemStack(Material.STICK, ChatColor.DARK_RED + "变形魔杖",
-                "", ChatColor.RED + ChatColor.ITALIC.toString() + "使用转化配方制造此物品");
+                "", ChatColor.RED + ChatColor.ITALIC.toString() + "通过转化的方式获取此魔杖");
 
         TRANSMUTATION_CATEGORY = new ItemGroup(TRANSMUTATION_CATEGORY_KEY, TRANSMUTATION_MENU_ITEM);
         HERBOLOGY_CATEGORY = new ItemGroup(HERBOLOGY_CATEGORY_KEY, HERBOLOGY_MENU_ITEM);
